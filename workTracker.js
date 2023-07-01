@@ -53,7 +53,6 @@ const findDayTotals = () => {
         let prevDayTotalRow;
         prevDayTotalRow = document.getElementById("total" + today);
         
-
         if (prevDayTotalRow) {
             prevDayTotalRow.parentNode.removeChild(prevDayTotalRow);
         }
@@ -94,6 +93,7 @@ function myStopFunction() {
     clearInterval(myInterval);
     stopTimer();
     findDayTotals();
+    document.getElementById('table').style.display='table';
 }
 
 

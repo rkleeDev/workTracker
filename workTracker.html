@@ -6,42 +6,37 @@
     <title>Work Tracker</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- <script src="task.js" charset="utf-8"></script> -->
 </head>
 <body>
-    <script src="workTracker.js" charset="utf-8" type="text/javascript">
-    //shown at http://localhost/advjavascript/demos/Wk14/demos/apiDemo.html
-        // let url = "https://lhigherblb.execute-api.us-east-2.amazonaws.com/tasks"; //missing CORS
-        // let url = "https://0nbzuhcohd.execute-api.us-east-2.amazonaws.com/development/tasks";
-        // fetch(url).then(data => data.json()).then(tasks => console.log(tasks));
-    </script>
     <h1>Work Tracker</h1>
-    <p></p>
-    <div>
-        Description: <input type="text" id="description">
-        <button type="button" id="submitDesc">Submit Description</button>
-        <div id="stopDiv">
-            <button type="button" id="stopTime">Stop Time</button>
-            <p>Current Work Task: <span id="taskSpan"></span></p>
-            <p>Current Work Time: <span id="timeSpan"></span></p>
+    <div id="bodyDiv">
+        <div id="headerDiv">
+            <div>
+                Description: <input type="text" id="description">
+            </div>
+            <button type="button" id="submitDesc">Submit Description</button>
+            <div id="stopDiv">
+                <button type="button" id="stopTime">Stop Time</button>
+                <p>Current Work Task: <span id="taskSpan"></span></p>
+                <p>Current Work Time: <span id="timeSpan"></span></p>
+            </div>
         </div>
-    </div>
-
-    <table id="table">
-        <tr id="headers">
-            <th id="th">
-                Date: 
-            </th>
-            <th>
-                Description: 
-            </th>
-            <th>
-                Time Spent (secs): 
-            </th>
-        </tr>
-    </table>
     
-
+        <table id="table">
+            <tr id="headers">
+                <th id="th">
+                    Date: 
+                </th>
+                <th>
+                    Description: 
+                </th>
+                <th>
+                    Time Spent (secs): 
+                </th>
+            </tr>
+        </table>
+    </div>
+    <script src="workTracker.js"></script>
 </body>
 </html>
 
