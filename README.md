@@ -15,5 +15,3 @@ This is a small project using JavaScript, HTML, and CSS.  You can enter a work t
 - When the Work/Task is completed, push 'Stop Time'
 - A table will populate on the right of the screen with Work task you just completed
 
-
-#### Note: 

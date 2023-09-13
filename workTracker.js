@@ -43,13 +43,18 @@ const submitDescription = () => {
 //Finds current day's totals
 const findDayTotals = () => {
     today = new Date();
+    newDay = new Date();
     let dd = String(today.getDate()).padStart(2, '0');
+    let nd = String(today.getDate() + 1).padStart(2, '0');
     let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     let yyyy = today.getFullYear();
 
     today = mm + '/' + dd + '/' + yyyy;
-
-    if(today == lastUsedDay) {
+    // dd = parseInt(dd) + 1;
+    newDay = mm + '/' + nd + '/' + yyyy;
+    
+    //TODO: Test to ensure that this works correctly
+    if(newDay != lastUsedDay) {
         let prevDayTotalRow;
         prevDayTotalRow = document.getElementById("total" + today);
         

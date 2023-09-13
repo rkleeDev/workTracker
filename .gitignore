@@ -1,2 +1,8 @@
 **/
 .DS_Store
+cypress.config.js
+jsconfig.json
+package-lock.json
+package.json
+stack.test.js
+workTracker.test.js
